@@ -1,0 +1,3348 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>By Karen Vazquez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Dratf</strong> by Karen Vazquez</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>EA Ontology<br />
+											(Draft)</h1>
+											<p>Ontology about ethical assessments</p>
+										</header>
+										<p>The Design of this Ontology was made to incorpore different kinds of Ethical 
+											Assessments such as: Assessing Expectations by Lucivero, Antocipatory Technology Ethics by Philip Brey and Ethical Impact Assessment mentionated in Satori project.
+										</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									
+									
+										
+									
+								</div>
+								</section>
+							<!-- Section -->
+							<a name="namespace">
+							<section>
+								<header class="major">
+									<h2>Namespaces declarations</h2>
+								</header>
+								<div class="features">
+									<article>
+										
+										<div class="content">
+											<h3>Description of Namespaces</h3>
+											<p>The namespace for EAOntology is http://ateontology.protect.linkeddata.es/def/ateo#. In the next table there are all the namespaces used in the ontology.</p>
+									
+									</article>
+									<article>
+										
+										<table class="tg" style="width:100px; ">
+											<div align="center">
+											<thead>
+											  <tr>
+												<th class="tg-0lax"><b>Prefix</b></th>
+												<th class="tg-0lax"><b>Namespaces</b></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">ateo</td>
+												<td class="tg-0lax"><span>http://ateontology.protect.linkeddata.es/def/ateo#
+												</span></td>
+												
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">doc</td>
+												<td class="tg-0lax"><span>http://www.w3.org/2000/10/swap/pim/doc#</span></td>
+												
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">dbpedia-owl</td>
+												<td class="tg-0lax"><span>http://dbpedia.org/ontology/</span></td>
+												
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">modsci</td>
+												<td class="tg-0lax"><span>https://w3id.org/skgo/modsci#</span></td>
+												
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">rdf</td>
+												<td class="tg-0lax"><span>shttp://www.w3.org/1999/02/22-rdf-syntax-ns#</span></td>
+												
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">pext</td>
+												<td class="tg-0lax"><span>http://www.ontotext.com/proton/protonext#</span></td>
+												
+											  </tr>
+
+											</tbody>
+										</div>
+										</table>
+									
+									</article>
+								</div>
+									<article>
+									</article>
+									
+								
+							</section>
+							</a>
+								<!-- Section -->
+								<a name="basevocabulary">
+								<section>
+									<header class="major">
+										<h2>Base Vocabulary</h2>
+									</header>
+									<div class="features">
+										<article>
+											
+											<div class="content">
+												<h3>Description of Base Vocabulary</h3>
+												<p>Base Vocabulary is the root for the ontology, as we mentioned above, 
+													EA Ontology is mainly developed to describe three kinds of Ethical Assessment. 
+													To each one, even though there are similar parts, each one has a different structure, 
+													process or point of view to assess some new technology. However, Base Vocabulary have 
+													the most important classes in this Ontology as soon as represent the main classes for 
+													each Ethical Assessment consider in EA Ontology.</p>
+													<div align="center"><img src="images/diagrams/general.jpg" alt=""  width=700 height=auto /></div>
+											
+											<br>
+										</article>
+										<article>
+											<table class="tg">
+												<thead>
+												  <tr>
+													<th class="tg-0lax"><b>Class</b></th>
+													<th class="tg-0lax"><b>Property</b></th>
+													<th class="tg-0lax"><b>Description</b></th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<th class="tg-0lax"><b>Ethical Assessment<br></td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">hasApproach</span></td>
+													<td class="tg-0lax">Ethical Assessments</td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Approach</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">studyOf</span></td>
+													<td class="tg-0lax">Approach or method in Ethical Assessment</td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">New Emerging Technology</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+													<td class="tg-0lax">New Technology to be assess</td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Assessing Expectations</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">subClassOf</span></td>
+													<td class="tg-0lax">Method describe by Lucivero </td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Anticipatory Technology Ethics</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">subClassOf</span></td>
+													<td class="tg-0lax">Method describe by Philip Brey</td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Ethical Impact Assessment</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">subClassOf</span></td>
+													<td class="tg-0lax">Method describe in Satori Project</td>
+												  </tr>
+	
+												</tbody>
+											</table>
+										
+										</article>
+									</div>
+										<article>
+										</article>
+										
+									
+								</section>
+								</a>
+							
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Classes to Anticipatory Technology Ethics</h2>
+								</header>
+								<div class="features">
+									
+									<article>
+										<h2>Anticipatory Technology Ethics</h2>
+									</article>
+									
+									<article>	
+										<img src="images/diagrams/brey1.png" alt="" width=1050 height=auto />
+									</article>
+									<article>
+										<h3>Ethical analysis</h3>
+									</article>
+									<article>							
+										
+								
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EthicalAnalysis</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study to identify some ethical issues in the technologies.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+									<article>
+										<h3>Level of Ethical analysis</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">LevelOfEthicalAnalysis</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Levels (phases) that define the ethical analysis in ATE.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Technology Level</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">TechnologyLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">The first level to ethical analysis, is about the study of the moral relevant features of the technology.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Artefact Level</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ArtefactLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Second level to ethical analysis in ATE, level where moral features of artifacts is analyzed.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Application Level</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Third level to ethical analysis, level where moral features of uses of artifacts are analyzed.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Technology</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Technology</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Collection of techniques that are related to each other because of a common purpose, domain, or formal or functional features.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Technique</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Is a procedure to accomplish a specific activity or task.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Artefact</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Physical product used in the technology.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Procedure</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Functional procedures developed within the field.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Ethical Issue</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Problem or concern about ethics.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Design Paradigms</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Create the set of theories, research methods, standards for what constitutes legitimate contributions to a field.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Knowledge Representation And Reasoning Technique</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Is an area of Artificial Intelligent which concerned for how the computer systems represent the information (i.e., the way that the computer could understand and use the information to solve real world problems).</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Machine Learning</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Is an efficient and effective way of programming based on statistics.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>General Implication And Risk</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Features of a technology that entail a possible harm whose frequency and magnitude can be assessed.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Technology Procedure</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Work methods used by technology.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Use Of Technological Artefact</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Use of physical artefacts (products) for a particular purpose or in a particular context.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Use Of Technological Procedure</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Use of functional procedures for a particular purpose or in a particular context.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Particular Domain</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Specific area of interest.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Infrastructure</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Structures developed for support the functionality of households and firms.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Finance</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Services or institutions that provide financial services to commercial and retail customers.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Public Service</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Essential services to serve the community.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Finance</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Services or institutions that provide financial services to commercial and retail customers.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Public Service</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Essential services to serve the community.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Smart Home</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Smart home technologies are used inside the house by residents to increase efficiency of their home and to improve security.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Application Level</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Third level to ethical analysis, level where moral features of uses of artifacts are analyzed.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Education</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">In this context is refer to applications used in education research.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Science</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study of the structure and behavior of the physical world.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Media And Entertainment</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Applications used to media and entertainment industry (television, films, music, etc.).</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Autonomy And Liberty</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Autonomy: Right to be independent or make own decisions</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Privacy</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Right to not be disturbed by anything.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Justice And Fairness</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>.
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Fairness in the way people is dealt with.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Responsability And Accountability</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Responsability: Quality or state of being responsible.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Safety And Security</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Safety: A state where is safe and not in danger or risk. Security: State of being free from danger or threat. </span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+									<article>
+										<h3>Transparency</h3>
+									</article>
+									<article>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ApplicationLevel</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Honesty about people's actions.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+											</table>
+									</article>
+
+
+									
+								</div>
+							</section>
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h1>Assessing Expectations</h1>
+								</header>
+
+								<div class="content">
+									
+										<p>Assessing Expectation makes reference to three main analyses: Feasibility, Usability and Desirability. As each one has their own Classes and properties this part is divided in three parts. </p>
+																	<div class="features"></div>
+									<article>	
+										<img src="images/diagrams/lucivero1.png" alt="" width=auto height=auto />
+									</article>
+									<article>
+										<br>
+										<br>
+									</article>
+									<article>
+										<br>
+										<h2>Technology Feasibility</h2>
+									</article>
+									<article>	
+										<img src="images/diagrams/lucivero2.png" alt="" width=auto height=auto />
+									</article>
+									<article>	
+										<h2>Classes</h2>
+										<h3>Technology Feasibility</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">TechnologyFeasibility</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study to identify some ethical issues in the technologies.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+									<article></article>
+									<article>
+										<h3>Elimination Strategic Distortion</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Part of Technology Feasibility to delete some distortion made by scientists.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Expectation</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Expectation</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Is it some action/process/ that could happen (belief).
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Aim Expected</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">It is the expected goal
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Audience Expected</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">The audience(people) expected to impact with the technology.
+
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Scientist</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to experts in developing the technology
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Justification Of Expectation</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Reason to prove the expectation is real.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Expectation Without Location</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"> Refer to expectation made in some kind of location.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Expectation With Location</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to expectation made without kind of location.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>State Of Art Evidence</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"> Document where the SOA is described to be present as evidence
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Scientific Evidence</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Document where there are all scientific proofs to be present as evidence.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Scientific Paradigm Evidence</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Document where there are all paradigms in base to science to be present as evidence. 
+
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Place</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Place where the technology was developed.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Laboratory</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Scientific place where the technology was developed.
+
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Scientific Journal</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"> Scientific journal where the technology was/is presented.
+
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Techno-Scientist ’Expectations</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Expectations or beliefs made around the technology.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Uncertain</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">When someone is not true
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article></article>
+									<article>
+										<h3>Scientific Controversies</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">“Discussion” caused by invalid arguments around science.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+									<article></article>
+									<article>
+										<h3>Additional Challenges</h3>
+									</article>
+									<article>	
+										
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">EliminationStrategicDistortion</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Additional challenges found in the development of the technology.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+									</article>
+
+									<article>
+										<br>
+										<br>
+									</article>
+									<article>
+										<br>
+										<h2>Technological Usability</h2>
+									</article>
+									<article>	
+										<img src="images/diagrams/lucivero3.png" alt="" width=auto height=auto />
+									</article>
+									<article>	
+										<h2>Classes</h2>
+										<h3>Technological Usability</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">TechnologyFeasibility</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study to identify some ethical issues in the technologies.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Assess Implicit Script</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">AssessImplicitScript</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study to identify some ethical issues in the technologies.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Use Of Technology</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Use Of Technology</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Uses that one technology would have.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Performance Societal Practices</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">PerformanceSocietalPractices</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the way in which the technology works in the society.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Fictive Script</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Fictive Script</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Assumptions and the network of relations envisioned in expectations of future technologies.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Assupposition</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Assupposition</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Something that is accepted as true without a previous proof.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Context Of Application</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">ContextOfApplication</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Environment where application is used.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Expert Handling</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Expert Handling</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the way in how the expert takes the situation.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Plausibility</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Plausibility</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Quality of seeming likely to be true.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Audience</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Audience</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">The audience(people) to impact with the technology.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Practices</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Practices</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Work made to do research.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Constructive Technology Assessment</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Constructive Technology Assessment</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Method to investigate to what extent the scenarios are plausibles for an audience.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Interview</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Interview</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Questions made to experts to investigate to what extent the scenarios are plausibles for an audience.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Workshop</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Workshop</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Discussion made to experts to investigate to what extent the scenarios are plausibles for an audience.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Assess Social Conditions</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">TechnologyFeasibility</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Evaluation to review the things about the technology that influence society.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Vision And Design</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Vision And Design</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Technology Developers</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Technology Developers</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">People in charge of technology development.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Experts</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Experts</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">People with a high level of knowledge in some area.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Related Expert</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Related Expert</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"> All experts in relation with technology development.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Potential Users</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Potential Users</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Main possible users that will use the technology.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										
+
+									</article>
+
+
+									<article>
+										<br>
+										<br>
+									</article>
+									<article>
+										<br>
+										<h2>Technological Desirability</h2>
+									</article>
+									<article>	
+										<img src="images/diagrams/lucivero4.png" alt="" width=auto height=auto />
+									</article>
+									<article>	
+										<h2>Classes</h2>
+										<h3>Evaluation Of Expectation</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Evaluation Of Expectation</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the activity to evaluate the expectations.
+												</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Morality Of Different Audience</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Morality Of Different Audience</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to moral values that have some audiences.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Vision Assessment</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Vision Assessment</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Type of technology assessment.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Norm</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Norm</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the Vision Assessment approach, as some norms are implicated in this approach</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Value</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Value</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the Vision Assessment approach, as some values are implicated in this approach.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>View Of Good Life</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">View Of Good Life</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Refer to the Vision Assessment approach, as some views of a good life  are implicated in this approach.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Vision On NEST</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Vision On NEST</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Normative Controversy</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Normative Controversy</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">“Discussion” caused by invalid arguments.</span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Pattern Of Moral Argumentation</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Pattern Of Moral Argumentation</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Grammar</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Grammar</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										<h3>Future Speculate Debate</h3>
+										<table class="tg">
+											<thead>
+											  <tr>
+												<th class="tg-0lax">Term</th>
+												<th class="tg-0lax"><span style="font-weight:bold">Future Speculate Debate</span></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td class="tg-0lax">Description</td>
+												<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none"></span></td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax" rowspan="2">Property</td>
+												<td>subClassOf: <b>Assessing Expectations</td>
+											  </tr>
+											  <tr>
+												<td>superClassOf: <b>Level Of Ethical Analysis</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Source</td>
+												<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+											  </tr>
+											  <tr>
+												<td class="tg-0lax">Creation</td>
+												<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+											  </tr>
+											</tbody>
+										</table>
+
+										
+
+
+										
+									</article>
+								</div>
+							</section>
+							<!-- Section -->
+								<section>
+									
+									<header class="major">
+										<h2>Classess</h2>
+									</header>
+									<div class="posts">
+									<!--
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<table class="tg">
+												<thead>
+												  <tr>
+													<th class="tg-0lax">Term</th>
+													<th class="tg-0lax"><span style="font-weight:bold">Ethical Analysis</span></th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td class="tg-0lax">Description</td>
+													<td class="tg-0lax"><span style="font-weight:normal;font-style:normal;text-decoration:none">Study to identify some ethical issues in the technologies.</span></td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">subClassOf</td>
+													<td class="tg-0lax"></td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Source</td>
+													<td class="tg-0lax">Anticipatory Ethics for Emerging Technologies - Philip A. E. Brey.</td>
+												  </tr>
+												  <tr>
+													<td class="tg-0lax">Creation</td>
+													<td class="tg-0lax">April 2021 By Karen Vazquez</td>
+												  </tr>
+												</tbody>
+												</table>
+										</article>
+									-->
+										
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Content</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Ontology</a></li>
+										<li><a href="#namespace">Namespaces</a></li>
+										<li>
+											<span class="#classes">Base Vocabulary
+											<a href="#basevocabulary"></a>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</a>
+									</span>
+										</li>
+										<li>
+											<span class="#classes">Anticipatory Technology Ethics (Classess)
+											<ul>
+												<li><a href="#EA">Ethical Analysis</a></li>
+												<li><a href="#LEA">Level of Ethical Analysis</a></li>
+												<li><a href="#TL">Technology Level</a></li>
+												<li><a href="#AL">Artefact Level</a></li>
+												<li><a href="#AppL">Application Level</a></li>
+												<li><a href="#Technology">Technology</a></li>
+												<li><a href="#Technique">Technique</a></li>
+												<li><a href="#Proc">Proccess</a></li>
+												<li><a href="#Met">Method</a></li>
+												<li><a href="#Tool">Tool</a></li>
+												<li><a href="#Ate">Artefact</a></li>
+												<li><a href="#Proced">Procedure</a></li>
+												<li><a href="#EI">Ethical Issue</a></li>
+												<li><a href="#DP">Desing Paradigms</a></li>
+												<li><a href="#KP">Knowledge Representation And Reasoning Technique</a></li>
+												<li><a href="#ML">Machine Learning</a></li>
+												<li><a href="#GI">General Implication</a></li>
+												<li><a href="#Risk">Risk</a></li>
+												<li><a href="#TP">Technology Procedure</a></li>
+												<li><a href="#UTA">Use Of Technological Artefact</a></li>
+												<li><a href="#UTP">Use Of Technological Procedure</a></li>
+												<li><a href="#PD">Particular Domain</a></li>
+												<li><a href="#Infras">Infrastructure</a></li>
+												<li><a href="#Finance">Finance</a></li>
+												<li><a href="#PS">Public Service</a></li>
+												<li><a href="#SH">Smart Home</a></li>
+												<li><a href="#Edu">Education</a></li>
+												<li><a href="#Sci">Science</a></li>
+												<li><a href="#Media">Media</a></li>
+												<li><a href="#Enter">Entertainment</a></li>
+												<li><a href="#AAL">Autonomy And Liberty</a></li>
+												<li><a href="#P">Privacy</a></li>
+												<li><a href="#JAF">Justice And Fairness</a></li>
+												<li><a href="#RAA">Responsability And Accountability</a></li>
+												<li><a href="#SAS">Safety And Security</a></li>
+												<li><a href="#Transparency">Transparency</a></li>
+												<li><a href="#Harm">Harm</a></li>
+												<li><a href="#EAP">Efficiency And Productivity</a></li>
+												<li><a href="#Efec">Efectivenss</a></li>
+												<li><a href="#RR">Risk Reduction</a></li>
+												<li><a href="#Human">Human-Al Collaboration</a></li>
+												
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+
+											</ul>
+										</span>
+										</li>
+										
+										
+									</ul>
+									
+								</nav>
+
+							<!-- Section -->
+							
+								<section>
+									<header class="major">
+										<h2>Made in and with</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/oeg.png" alt="" /></a>
+											<p></p>
+										</article>
+
+										<article>
+											<a href="#" class="image"><img src="images/protect.png" alt="" /></a>
+											<p></p>
+										</article>
+										
+									</div>
+									<!--
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+									-->
+								</section>
+							
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact</h2>
+									</header>
+									<p>I am Karen Vazquez, PhD Student at Ontology Engineer Group and fellow in PROTECT ITN</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">karenleticia.vazquez@upm.es</a></li>
+										<li class="icon solid fa-phone">+34 686560910</li>
+										<li class="icon solid fa-home">Madrid<br /></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Made with love <a href="https://unsplash.com"> </a> <a href="https://html5up.net"></a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
