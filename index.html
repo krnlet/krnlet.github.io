@@ -36,12 +36,11 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>EA Ontology<br />
+											<h1>EAOntology<br />
 											(Draft)</h1>
-											<p>Ontology about ethical assessments</p>
+											<p>Ontology of ethical assessments</p>
 										</header>
-										<p>The Design of this Ontology was made to incorpore different kinds of Ethical 
-											Assessments such as: Assessing Expectations by Lucivero, Antocipatory Technology Ethics by Philip Brey and Ethical Impact Assessment mentionated in Satori project.
+										<p>This ontology intends to account for several approaches to the ethical analysis of emerging technologies, specifically the ones defined by Lucivero et al. in their work on Assessing Expectations (añadir cita), by Brey in his Antocipatory Technology Ethics (cita), and by the european project Satori in their work on Ethical Impact Assessments (cita).
 										</p>
 										<ul class="actions">
 											<li><a href="#" class="button big">Learn More</a></li>
@@ -55,14 +54,14 @@
 							<!-- Section namespace delcarations-->
 								<section>
 									<header class="major">
-										<h2>Namespaces declarations</h2>
+										<h2>Namespace declarations</h2>
 									</header>
 									<div class="features">
 										<article>
 											
 											<div class="content">
 												<h3>Description of Namespaces</h3>
-												<p>The namespace for EAOntology is http://ateontology.protect.linkeddata.es/def/ateo#. In the next table there are all the namespaces used in the ontology.</p>
+												<p>The namespace for EAOntology is http://ateontology.protect.linkeddata.es/def/ateo#. In the table below, we include the set of namespaces used in the ontology. They belong to well-known vocabularies that we are reusing for our purposes.</p>
 									
 											</div>
 										</article>
@@ -119,18 +118,15 @@
 							<!-- Section base vocabulary-->
 								<section>
 									<header class="major">
-										<h2>Base Vocabulary</h2>
+										<h2>Core Vocabulary</h2>
 									</header>
 									<div class="features">
 										<article>
 											<div class="content">
-												<h3>Description of Base Vocabulary</h3>
-												<p>Base Vocabulary is the root for the ontology, as we mentioned above, 
-													EA Ontology is mainly developed to describe three kinds of Ethical Assessment. 
-													To each one, even though there are similar parts, each one has a different structure, 
-													process or point of view to assess some new technology. However, Base Vocabulary have 
-													the most important classes in this Ontology as soon as represent the main classes for 
-													each Ethical Assessment consider in EA Ontology.</p>
+												<h3>Description of the Core Vocabulary</h3>
+												<p>The Core Vocabulary is the root for the ontology. As mentioned above, 
+													the EAOntology is mainly developed to embrace the concepts defined in several approaches to ethical assessments. 
+													Even though they bare similarities, each approach may provide a different viewpoint to the assessment of emerging technologies, what translates into a differing structuring of concepts and relations in the ontology. However, the Core Vocabulary aims at capturing the main concepts involved in any Ethical Assessment.</p>
 									
 											</div>
 										</article>
@@ -140,7 +136,7 @@
 												<table>
 													<thead>
 													  <tr>
-														<th><b>Class</b></th>
+														<th><b>Concept or Class</b></th>
 														<th><b>Property</b></th>
 														<th><b>Description</b></th>
 													  </tr>
@@ -149,7 +145,7 @@
 													  <tr>
 														<th><b>Ethical Assessment<br></td>
 														<td><span>hasApproach</span></td>
-														<td>Ethical Assessments</td>
+														<td>Ethical Assessment</td>
 													  </tr>
 													  <tr>
 														<td>Approach</td>
@@ -157,24 +153,24 @@
 														<td>Approach or method in Ethical Assessment</td>
 													  </tr>
 													  <tr>
-														<td>New Emerging Technology</td>
+														<td>Emerging Technology</td>
 														<td><span></span></td>
-														<td>New Technology to be assess</td>
+														<td>New Technology to be assessed</td>
 													  </tr>
 													  <tr>
 														<td>Assessing Expectations</td>
 														<td><span>subClassOf</span></td>
-														<td>Method describe by Lucivero </td>
+														<td>Approach described by Lucivero </td>
 													  </tr>
 													  <tr>
 														<td>Anticipatory Technology Ethics</td>
 														<td><span>subClassOf</span></td>
-														<td>Method describe by Philip Brey</td>
+														<td>Method for the ethical assessment of emerging technologies described by Philip Brey in Brey 2021</td>
 													  </tr>
 													  <tr>
 														<td>Ethical Impact Assessment</td>
 														<td><span>subClassOf</span></td>
-														<td>Method describe in Satori Project</td>
+														<td>Method described in the Satori Project</td>
 													  </tr>
 													  <tr>
 														<td>Ethical analysis</td>
@@ -207,7 +203,7 @@
 										<div class="figure">
 											<center>
 											<img src="images/diagrams/general.png" alt="" width="1100" height="auto"/>
-											<p><br>Figure 1 provides a general overview of the current status of the EAOntology. <br>It is worth noting that some elements might be deleted and the model is not final as it is still ongoing work.</p>
+											<p><br>Figure 1 provides a general overview of the current status of the EAOntology. <br>It is worth noting that some elements might be deleted since the model is not final, as it is still ongoing work.</p>
 										</center>
 										</div>
 									
@@ -219,11 +215,11 @@
 									
 									<header class="major">
 										
-										<h2>Classes to Anticipatory Technology Ethics</h2>
+										<h2>Classes from Anticipatory Technology Ethics (ATE)</h2>
 									</header>
 									<div class="content">
-										<h3>Description of Base Vocabulary in ATE</h3>
-											<p>ATE consist of three main classes: Levels, Methods and Ethical List, in the next tables we describe each class with it's properties.</p>
+										<h3>Description of Core Vocabulary in ATE</h3>
+											<p>ATE consist of three main classes: Level, Method and Ethical List, in the next tables we describe each class together with their describing properties.</p>
 									
 									</div>
 									<!--Levels ATE-->
@@ -240,7 +236,7 @@
 											<h3>Levels Of Ethical Analysis</h3>
 											<center>
 											<img src="images/diagrams/brey1.png" alt="" width=1050 height=auto />
-											<p>Figure 3 represent all classes within the Superclass Levels Of Ethical Analysis</p>
+											<p>Figure 3 represents all classes within the Superclass Levels Of Ethical Analysis</p>
 											</center>
 										</article>	
 										<article></article>
@@ -262,7 +258,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Study to identify some ethical issues in the technologies.</span></td>
+													<td><span>Study to identify ethical issues in technologies.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -281,7 +277,7 @@
 										</article>
 										<article>
 										
-											<h3>Level of Ethical analysis</h3>
+											<h3>Level of ethical analysis</h3>
 											<a name=""></a>
 											<table>
 												<thead>
@@ -357,7 +353,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Second level to ethical analysis in ATE, level where moral features of artifacts is analyzed.</span></td>
+													<td><span>Second level to ethical analysis in ATE, level in which moral features of artifacts are analyzed.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -390,7 +386,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Third level to ethical analysis, level where moral features of uses of artifacts are analyzed.</span></td>
+													<td><span>Third level to ethical analysis, level in which moral features of uses of artifacts are analyzed.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -450,7 +446,7 @@
 													<tbody>
 													  <tr>
 														<td>Description</td>
-														<td><span>Is a procedure to accomplish a specific activity or task.</span></td>
+														<td><span>Procedure to accomplish a specific activity or task.</span></td>
 													  </tr>
 													  <tr>
 														<td rowspan="3">Property</td>
@@ -573,20 +569,20 @@
 										</article>
 
 										<article>
-											<h3>Design Paradigms</h3>
+											<h3>Design Paradigm</h3>
 										
 											<a name="1_8"></a>
 											<table>
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">DesignParadigms</span></th>
+													<th><span style="font-weight:bold">DesignParadigm</span></th>
 												  </tr>
 												</thead>
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Create the set of theories, research methods, standards for what constitutes legitimate contributions to a field.</span></td>
+													<td><span>Set of theories, research methods, standards for what constitutes legitimate contributions to a field.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -649,7 +645,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Is an efficient and effective way of programming based on statistics.</span></td>
+													<td><span>Efficient and effective way of programming based on statistics.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -746,7 +742,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Work methods used by technology.</span></td>
+													<td><span>Work method(s) used by a technology.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -827,13 +823,13 @@
 										</article>
 
 										<article>
-											<h3>Particular Domain</h3>
+											<h3>Domain</h3>
 											<a name="1_16"></a>
 											<table>
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">ParticularDomain</span></th>
+													<th><span style="font-weight:bold">Domain</span></th>
 												  </tr>
 												</thead>
 												<tbody>
@@ -843,7 +839,7 @@
 												  </tr>
 												  <tr>
 													  <td>Property</td>
-													  <td>superClassOf: <b>Infrastructure, Finance, PublicService, SmartHome, Education, Science, Media, Entertainment</b></td>
+													  <td>superClassOf: <b>Infrastructure, Finance, PublicServices, SmartHome, Education, Science, Media, Entertainment</b></td>
 												  </tr>
 												  <tr>
 													<td>Source</td>
@@ -870,7 +866,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Structures developed for support the functionality of households and firms.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Structures developed to support the functionality of households and firms.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -926,13 +922,13 @@
 										</article>
 
 										<article>
-											<h3>Public Service</h3>
+											<h3>Public Services</h3>
 											<a name="1_19"></a>
 											<table>
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">PublicService</span></th>
+													<th><span style="font-weight:bold">PublicServices</span></th>
 												  </tr>
 												</thead>
 												<tbody>
@@ -1006,7 +1002,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">In this context is refer to applications used in education research.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">In this context it refers to applications used in education research.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -1074,7 +1070,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Applications used to media and entertainment industry (television, films, music, etc.).</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Applications used in the media and entertainment industry (television, films, music, etc.).</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -1142,7 +1138,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Autonomy: Right to be independent or make own decisions</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Autonomy: Right to be independent or make one's own decisions</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -1266,7 +1262,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Safety: A state where is safe and not in danger or risk. Security: State of being free from danger or threat. </span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Safety: A state of being safe and not in danger or risk. Security: State of being free from danger or threat. </span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -1479,7 +1475,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Possible stage then to evaluation to implement the results of ethical evaluation in ATE but into the design process.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Possible stage after the evaluation stage to implement the results of ethical evaluation in ATE, but in the design process.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -1554,7 +1550,7 @@
 													<td>subClassOf: <b>Stage</td>
 												  </tr>
 												  <tr>
-													  <td>consistOf: <b>GovernanceRecomendation</b></td>
+													  <td>consistOf: <b>GovernanceRecommendation</b></td>
 												  </tr>
 												  <tr>
 													<td>Source</td>
@@ -1581,7 +1577,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Stage after to Evaluation stage, that is used to guide the development of the technology.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Stage after the Evaluation stage that is used to guide the development of the technology.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -1616,7 +1612,7 @@
 												  </tr>
 												  <tr>
 													<td>Property</td>
-													<td>hasNegativeImpact: <b>NegativyImpact</td>
+													<td>hasNegativeImpact: <b>NegativeImpact</td>
 												  </tr>
 												  <tr>
 													<td>Source</td>
@@ -1637,7 +1633,7 @@
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">NegativyImpact</span></th>
+													<th><span style="font-weight:bold">NegativeImpact</span></th>
 												  </tr>
 												</thead>
 												<tbody>
@@ -1674,7 +1670,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Is a degree of a thing or action, that's mean, the value determines the sense of a person of right and wrong.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">It is a degree of a thing or action, that's mean, the value determines the sense of a person of right and wrong.</span></td>
 												  </tr>
 												 
 												  <tr>
@@ -1702,7 +1698,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Similar to value, principle is a moral rule that determines if it is good or bad.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Similar to value, a principle is a moral rule that determines if it is good or bad.</span></td>
 												  </tr>
 												  
 												  <tr>
@@ -1817,7 +1813,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Is a fundamental and familiar part of our moral practices and our interpersonal relationships.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">It is a fundamental and familiar part of our moral practices and our interpersonal relationships.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -1864,20 +1860,20 @@
 										</article>
 										
 										<article>
-											<h3>Governance Recomendation</h3>
+											<h3>Governance Recommendation</h3>
 										
 											<a name="2_17"></a>
 											<table>
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">GovernanceRecomendation</span></th>
+													<th><span style="font-weight:bold">GovernanceRecommendation</span></th>
 												  </tr>
 												</thead>
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Authority recommendations into the governance stage.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">Authority recommendation in the governance stage.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -1954,7 +1950,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">List with different ethical issues that could find in a technology.</span></td>
+													<td><span style="font-weight:normal;font-style:normal;text-decoration:none">List with ethical issues that could be found in a technology.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -2029,7 +2025,7 @@
 													<td>subClassOf: <b>EthicalList</td>
 												  </tr>
 												  <tr>
-													<td>superClassOf: <b>Fredom, Autonomy, HumanDignity, Privacy, Property, HumanRightDeclaration, AnimalRightAndAnimalWelfare</td>
+													<td>superClassOf: <b>Freedom, Autonomy, HumanDignity, Privacy, Property, HumanRightDeclaration, AnimalRightAndAnimalWelfare</td>
 												  </tr>
 												  <tr>
 													<td>Source</td>
@@ -2090,7 +2086,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Is a benefit for a group, or for all people in a community.</span></td>
+													<td><span>It is a benefit for a group, or for all people in a community.</span></td>
 												  </tr>
 												  <tr>
 													<td rowspan="2">Property</td>
@@ -2155,7 +2151,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Physical or psychological sensation of pain or discomfort, could be caused by illness.</span></td>
+													<td><span>Physical or psychological sensation of pain or discomfort, which could be caused by illness.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -2217,7 +2213,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Refer to some injury agree to human capabilities.</span></td>
+													<td><span>Injury to human capabilities.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -2248,7 +2244,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Could be any bad effect on the environment.</span></td>
+													<td><span>Any bad effect on the environment.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -2279,7 +2275,7 @@
 												<tbody>
 												  <tr>
 													<td>Description</td>
-													<td><span>Refer to damage inflicted on society.</span></td>
+													<td><span>Damage inflicted on society.</span></td>
 												  </tr>
 												  <tr>
 													<td>Property</td>
@@ -2297,14 +2293,14 @@
 												</table>
 										</article>
 										<article>
-											<h3>Fredom</h3>
+											<h3>Freedom</h3>
 										
 											<a name="3_11"></a>
 											<table>
 												<thead>
 												  <tr>
 													<th>Term</th>
-													<th><span style="font-weight:bold">Fredom</span></th>
+													<th><span style="font-weight:bold">Freedom</span></th>
 												  </tr>
 												</thead>
 												<tbody>
